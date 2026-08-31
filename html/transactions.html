@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker - Transactions</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <span>Expense</span>
+                <span>Tracker</span>
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <a href="index.html" class="nav-item">
+
+                    <span class="nav-icon">⌂</span>
+
+                    <span>Dashboard</span>
+
+                </a>
+
+
+                <a href="add-transaction.html" class="nav-item">
+
+                    <span class="nav-icon">⊕</span>
+
+                    <span>Add Transaction</span>
+
+                </a>
+
+
+                <!-- Active Page -->
+                <a href="transactions.html" class="nav-item active">
+
+                    <span class="nav-icon">▣</span>
+
+                    <span>Transactions</span>
+
+                </a>
+
+
+                <a href="reports.html" class="nav-item">
+
+                    <span class="nav-icon">▧</span>
+
+                    <span>Reports</span>
+
+                </a>
+
+
+                <a href="settings.html" class="nav-item">
+
+                    <span class="nav-icon">⚙</span>
+
+                    <span>Settings</span>
+
+                </a>
+
+            </nav>
+
+
+            <!-- Logout -->
+            <a href="#" class="logout">
+
+                <span class="logout-icon">↪</span>
+
+                <span>Logout</span>
+
+            </a>
+
+        </aside>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-content">
+
+
+            <!-- Transactions Card -->
+            <section class="transactions-card">
+
+
+                <!-- Page Header -->
+
+                <div class="transactions-header">
+
+                    <h1>All Transactions</h1>
+
+                </div>
+
+
+
+                <!-- ================= SEARCH + FILTER ================= -->
+
+                <div class="transaction-tools">
+
+
+                    <!-- Search -->
+
+                    <div class="search-box">
+
+                        <input type="text" placeholder="Search transactions...">
+
+                    </div>
+
+
+                    <!-- Category Filter -->
+
+                    <div class="filter-select">
+
+                        <select>
+
+                            <option value="all">
+                                All
+                            </option>
+
+                            <option value="income">
+                                Income
+                            </option>
+
+                            <option value="expense">
+                                Expense
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Filter Button -->
+
+                    <button class="filter-btn">
+
+                        <span class="filter-icon">≡</span>
+
+                        <span>Filter</span>
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- ================= TRANSACTION TABLE ================= -->
+
+                <div class="table-container">
+
+                    <table class="transactions-table">
+
+
+                        <!-- Table Head -->
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Date</th>
+
+                                <th>Category</th>
+
+                                <th>Description</th>
+
+                                <th>Amount</th>
+
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <!-- Table Body -->
+
+                        <tbody>
+
+
+                            <!-- Transaction 1 -->
+
+                            <tr>
+
+                                <td>
+                                    25 Aug 2026
+                                </td>
+
+                                <td>
+                                    Food
+                                </td>
+
+                                <td>
+                                    Dinner with friends
+                                </td>
+
+                                <td class="expense-amount">
+                                    -₹500
+                                </td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn" title="Edit">
+                                            ✎
+                                        </button>
+
+                                        <button class="delete-btn" title="Delete">
+                                            ♲
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- Transaction 2 -->
+
+                            <tr>
+
+                                <td>
+                                    24 Aug 2026
+                                </td>
+
+                                <td>
+                                    Transport
+                                </td>
+
+                                <td>
+                                    Auto ride
+                                </td>
+
+                                <td class="expense-amount">
+                                    -₹200
+                                </td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            ✎
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            ♲
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- Transaction 3 -->
+
+                            <tr>
+
+                                <td>
+                                    23 Aug 2026
+                                </td>
+
+                                <td>
+                                    Shopping
+                                </td>
+
+                                <td>
+                                    New T-Shirt
+                                </td>
+
+                                <td class="expense-amount">
+                                    -₹1,000
+                                </td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            ✎
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            ♲
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- Transaction 4 -->
+
+                            <tr>
+
+                                <td>
+                                    20 Aug 2026
+                                </td>
+
+                                <td>
+                                    Bills
+                                </td>
+
+                                <td>
+                                    Electricity Bill
+                                </td>
+
+                                <td class="expense-amount">
+                                    -₹2,000
+                                </td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            ✎
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            ♲
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- Transaction 5 -->
+
+                            <tr>
+
+                                <td>
+                                    15 Aug 2026
+                                </td>
+
+                                <td>
+                                    Food
+                                </td>
+
+                                <td>
+                                    Lunch
+                                </td>
+
+                                <td class="expense-amount">
+                                    -₹300
+                                </td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            ✎
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            ♲
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- Transaction 6 -->
+
+                            <tr>
+
+                                <td>
+                                    01 Aug 2026
+                                </td>
+
+                                <td>
+                                    Salary
+                                </td>
+
+                                <td>
+                                    Monthly Salary
+                                </td>
+
+                                <td class="income-amount">
+                                    +₹40,000
+                                </td>
+
+                                <td>
+
+                                    <div class="action-buttons">
+
+                                        <button class="edit-btn">
+                                            ✎
+                                        </button>
+
+                                        <button class="delete-btn">
+                                            ♲
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+
+                <!-- ================= PAGINATION ================= -->
+
+                <div class="pagination">
+
+
+                    <button class="page-btn previous-btn">
+                        ‹ Prev
+                    </button>
+
+
+                    <button class="page-number active-page">
+                        1
+                    </button>
+
+
+                    <button class="page-number">
+                        2
+                    </button>
+
+
+                    <button class="page-btn">
+                        Next ›
+                    </button>
+
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

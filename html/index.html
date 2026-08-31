@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker - Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span>Expense</span>
+                <span>Tracker</span>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <a href="index.html" class="nav-item active">
+                    <span class="nav-icon">⌂</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="add-transaction.html" class="nav-item">
+                    <span class="nav-icon">⊕</span>
+                    <span>Add Transaction</span>
+                </a>
+
+                <a href="transactions.html" class="nav-item">
+                    <span class="nav-icon">▣</span>
+                    <span>Transactions</span>
+                </a>
+
+                <a href="reports.html" class="nav-item">
+                    <span class="nav-icon">▧</span>
+                    <span>Reports</span>
+                </a>
+
+                <a href="settings.html" class="nav-item">
+                    <span class="nav-icon">⚙</span>
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+
+            <a href="#" class="logout">
+                <span class="logout-icon">↪</span>
+                <span>Logout</span>
+            </a>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="top-header">
+
+                <div class="welcome">
+                    <h1>Hello, Adesh 👋</h1>
+                    <p>Here's your financial overview</p>
+                </div>
+
+                <button class="month-selector">
+                    August 2026
+                    <span></span>
+                </button>
+
+            </header>
+
+
+            <!-- ================= SUMMARY CARDS ================= -->
+            <section class="summary-cards">
+
+                <!-- Balance -->
+                <div class="summary-card balance-card">
+
+                    <h3>Total Balance</h3>
+
+                    <p class="amount">
+                        ₹25,500
+                    </p>
+
+                </div>
+
+
+                <!-- Income -->
+                <div class="summary-card income-card">
+
+                    <h3>Total Income</h3>
+
+                    <p class="amount">
+                        ₹40,000
+                    </p>
+
+                </div>
+
+
+                <!-- Expense -->
+                <div class="summary-card expense-card">
+
+                    <h3>Total Expense</h3>
+
+                    <p class="amount">
+                        ₹14,500
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= RECENT TRANSACTIONS ================= -->
+            <section class="section-card">
+
+                <div class="section-header">
+
+                    <h2>Recent Transactions</h2>
+
+                    <a href="#" class="view-all">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="transactions-list">
+
+                    <!-- Transaction 1 -->
+                    <div class="transaction">
+
+                        <div class="transaction-left">
+
+                            <div class="transaction-icon food-icon">
+                                ▪
+                            </div>
+
+                            <div class="transaction-info">
+                                <h3>Food</h3>
+                                <p>Dinner with friends</p>
+                            </div>
+
+                        </div>
+
+                        <div class="transaction-right">
+
+                            <strong class="expense-text">
+                                -₹500
+                            </strong>
+
+                            <span>
+                                25 Aug 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Transaction 2 -->
+                    <div class="transaction">
+
+                        <div class="transaction-left">
+
+                            <div class="transaction-icon transport-icon">
+                                ♟
+                            </div>
+
+                            <div class="transaction-info">
+                                <h3>Transport</h3>
+                                <p>Auto ride</p>
+                            </div>
+
+                        </div>
+
+                        <div class="transaction-right">
+
+                            <strong class="expense-text">
+                                -₹200
+                            </strong>
+
+                            <span>
+                                24 Aug 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Transaction 3 -->
+                    <div class="transaction">
+
+                        <div class="transaction-left">
+
+                            <div class="transaction-icon income-icon">
+                                +
+                            </div>
+
+                            <div class="transaction-info">
+                                <h3>Salary</h3>
+                                <p>Monthly Salary</p>
+                            </div>
+
+                        </div>
+
+                        <div class="transaction-right">
+
+                            <strong class="income-text">
+                                +₹40,000
+                            </strong>
+
+                            <span>
+                                01 Aug 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= CATEGORY CHART ================= -->
+            <section class="section-card category-section">
+
+                <h2>Expense by Category</h2>
+
+                <div class="category-content">
+
+                    <!-- Pie Chart -->
+                    <div class="pie-chart">
+                        <div class="pie-center"></div>
+                    </div>
+
+
+                    <!-- Legend -->
+                    <div class="category-list">
+
+                        <div class="category-item">
+                            <span class="dot food-dot"></span>
+                            <span>Food</span>
+                            <strong>31%</strong>
+                        </div>
+
+                        <div class="category-item">
+                            <span class="dot transport-dot"></span>
+                            <span>Transport</span>
+                            <strong>14%</strong>
+                        </div>
+
+                        <div class="category-item">
+                            <span class="dot shopping-dot"></span>
+                            <span>Shopping</span>
+                            <strong>24%</strong>
+                        </div>
+
+                        <div class="category-item">
+                            <span class="dot bills-dot"></span>
+                            <span>Bills</span>
+                            <strong>17%</strong>
+                        </div>
+
+                        <div class="category-item">
+                            <span class="dot other-dot"></span>
+                            <span>Others</span>
+                            <strong>14%</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

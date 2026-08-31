@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker - Edit Transaction</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <span>Expense</span>
+                <span>Tracker</span>
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <a href="../index.html" class="nav-item">
+
+                    <span class="nav-icon">⌂</span>
+
+                    <span>Dashboard</span>
+
+                </a>
+
+
+                <a href="add-transaction.html" class="nav-item">
+
+                    <span class="nav-icon">⊕</span>
+
+                    <span>Add Transaction</span>
+
+                </a>
+
+
+                <!-- Active Page -->
+                <a href="transactions.html" class="nav-item active">
+
+                    <span class="nav-icon">▣</span>
+
+                    <span>Transactions</span>
+
+                </a>
+
+
+                <a href="reports.html" class="nav-item">
+
+                    <span class="nav-icon">▧</span>
+
+                    <span>Reports</span>
+
+                </a>
+
+
+                <a href="settings.html" class="nav-item">
+
+                    <span class="nav-icon">⚙</span>
+
+                    <span>Settings</span>
+
+                </a>
+
+            </nav>
+
+
+            <!-- Logout -->
+            <a href="#" class="logout">
+
+                <span class="logout-icon">↪</span>
+
+                <span>Logout</span>
+
+            </a>
+
+        </aside>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-content">
+
+
+            <!-- Edit Transaction Card -->
+
+            <section class="edit-transaction-card">
+
+
+                <!-- Heading -->
+
+                <h1>Edit Transaction</h1>
+
+
+                <!-- Form -->
+
+                <form class="edit-form">
+
+
+                    <!-- TYPE -->
+
+                    <div class="form-group">
+
+                        <label for="transaction-type">
+                            Type
+                        </label>
+
+                        <select id="transaction-type">
+
+                            <option value="expense" selected>
+                                Expense
+                            </option>
+
+                            <option value="income">
+                                Income
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- AMOUNT -->
+
+                    <div class="form-group">
+
+                        <label for="amount">
+                            Amount (₹)
+                        </label>
+
+                        <input type="number" id="amount" value="500">
+
+                    </div>
+
+
+
+                    <!-- CATEGORY -->
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category">
+
+                            <option value="food" selected>
+                                Food
+                            </option>
+
+                            <option value="transport">
+                                Transport
+                            </option>
+
+                            <option value="shopping">
+                                Shopping
+                            </option>
+
+                            <option value="bills">
+                                Bills
+                            </option>
+
+                            <option value="education">
+                                Education
+                            </option>
+
+                            <option value="entertainment">
+                                Entertainment
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- DESCRIPTION -->
+
+                    <div class="form-group">
+
+                        <label for="description">
+                            Description
+                        </label>
+
+                        <textarea id="description" rows="3">Dinner with friends</textarea>
+
+                    </div>
+
+
+
+                    <!-- DATE -->
+
+                    <div class="form-group">
+
+                        <label for="date">
+                            Date
+                        </label>
+
+                        <input type="date" id="date" value="2026-08-25">
+
+                    </div>
+
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="edit-actions">
+
+                        <button type="submit" class="update-btn">
+                            Update Transaction
+                        </button>
+
+
+                        <a href="transactions.html" class="cancel-btn">
+                            Cancel
+                        </a>
+
+                    </div>
+
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

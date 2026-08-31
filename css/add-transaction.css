@@ -1,0 +1,636 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f7f8fc;
+
+    color: #172033;
+}
+
+
+/* =========================================
+   APP LAYOUT
+========================================= */
+
+.app-container {
+    display: flex;
+
+    min-height: 80vh;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    width: 280px;
+
+    min-height: 80vh;
+
+    background: #071d38;
+
+    padding: 42px 20px 28px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+
+    flex-direction: column;
+
+    padding-left: 20px;
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+
+/* Navigation */
+
+.sidebar-nav {
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+.nav-item {
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 0 18px;
+
+    border-radius: 12px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* Active Navigation */
+
+.nav-item.active {
+    background: #673ee6;
+
+    box-shadow:
+        0 8px 20px rgba(103, 62, 230, 0.35);
+}
+
+
+.nav-icon {
+    width: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    font-size: 23px;
+}
+
+
+/* Logout */
+
+.logout {
+    margin-top: auto;
+
+    height: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding-left: 20px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+.logout-icon {
+    font-size: 24px;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.main-content {
+    flex: 1;
+
+    min-height: 100vh;
+
+    padding: 35px 55px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================
+   TRANSACTION FORM CARD
+========================================= */
+
+.transaction-form-card {
+    width: 100%;
+
+    max-width: 780px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    padding: 38px 55px 45px;
+
+    box-shadow:
+        0 4px 18px rgba(15, 23, 42, 0.04);
+}
+
+
+/* Page Heading */
+
+.transaction-form-card h1 {
+    font-size: 32px;
+
+    color: #151a27;
+
+    margin-bottom: 38px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.transaction-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+
+.form-group label {
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #202633;
+}
+
+
+/* =========================================
+   TYPE BUTTONS
+========================================= */
+
+.type-buttons {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+.type-btn {
+    height: 60px;
+
+    border-radius: 10px;
+
+    border: 1px solid #dfe3e9;
+
+    background: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #222936;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+/* Income Active */
+
+.type-btn.active-type {
+    background: #dff7e8;
+
+    border-color: #b9e8c9;
+
+    color: #208b50;
+}
+
+
+/* Hover */
+
+.type-btn:hover {
+    border-color: #7551e5;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #dfe3e9;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #202633;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+/* Input & Select */
+
+.form-group input,
+.form-group select {
+    height: 60px;
+
+    padding: 0 18px;
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    min-height: 110px;
+
+    padding: 17px 18px;
+
+    resize: vertical;
+}
+
+
+/* Placeholder */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #89919f;
+}
+
+
+/* Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #6b46e8;
+
+    box-shadow:
+        0 0 0 3px rgba(107, 70, 232, 0.10);
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.select-wrapper {
+    position: relative;
+}
+
+
+.select-wrapper select {
+    appearance: none;
+
+    cursor: pointer;
+
+    padding-right: 45px;
+}
+
+
+.select-wrapper::after {
+    content: "⌄";
+
+    position: absolute;
+
+    right: 20px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 20px;
+
+    color: #303640;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   DATE INPUT
+========================================= */
+
+input[type="date"] {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   ADD TRANSACTION BUTTON
+========================================= */
+
+.add-btn {
+    width: 100%;
+
+    height: 60px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #6540dc;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(101, 64, 220, 0.25);
+
+    transition: 0.2s ease;
+}
+
+
+.add-btn:hover {
+    background: #5734c7;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 10px 22px rgba(101, 64, 220, 0.30);
+}
+
+
+.add-btn:active {
+    transform: translateY(0);
+}
+
+
+.plus-icon {
+    font-size: 28px;
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .sidebar {
+        width: 230px;
+    }
+
+
+    .main-content {
+        padding: 30px;
+    }
+
+
+    .transaction-form-card {
+        padding: 35px 40px 40px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .app-container {
+        flex-direction: column;
+    }
+
+
+    .sidebar {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 20px;
+    }
+
+
+    .logo {
+        padding-left: 0;
+
+        font-size: 23px;
+    }
+
+
+    .sidebar-nav {
+        margin-top: 20px;
+
+        flex-direction: row;
+
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+    }
+
+
+    .nav-item {
+        min-width: max-content;
+
+        height: 45px;
+
+        font-size: 14px;
+    }
+
+
+    .logout {
+        display: none;
+    }
+
+
+    .main-content {
+        min-height: auto;
+
+        padding: 25px 18px;
+    }
+
+
+    .transaction-form-card {
+        padding: 28px 22px 32px;
+
+        border-radius: 14px;
+    }
+
+
+    .transaction-form-card h1 {
+        font-size: 26px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .transaction-form {
+        gap: 23px;
+    }
+
+
+    .type-buttons {
+        gap: 10px;
+    }
+
+
+    .type-btn {
+        height: 55px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .transaction-form-card h1 {
+        font-size: 23px;
+    }
+
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+
+    .form-group input,
+    .form-group select {
+        height: 54px;
+
+        font-size: 15px;
+    }
+
+
+    .form-group textarea {
+        min-height: 95px;
+
+        font-size: 15px;
+    }
+
+
+    .type-btn {
+        height: 52px;
+
+        font-size: 15px;
+    }
+
+
+    .add-btn {
+        height: 55px;
+
+        font-size: 15px;
+    }
+
+}
